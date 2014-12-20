@@ -1,10 +1,8 @@
 # There are two functions.
 
-
 # makeCacheMatrix is to create Object of cached-matrix
 # return a list consist of set,get function to set ,get X(matrix)
 # and setsolve function to set inverse-matrix getselve function to get cached inverse-matrix.
-
 
 makeCacheMatrix <- function(x = matrix()) {
 	
@@ -43,5 +41,4 @@ cacheSolve <- function(x, ...) {
     m<-solve(data,...)
     x$setsolve(m)
     m
-
 }
